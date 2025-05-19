@@ -1,0 +1,136 @@
+/*reseteo de estilos*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*estilo general*/
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(188, 250, 250);
+    padding: 22px;
+}
+h1, h2, h3 {
+    color: #04070a;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    background-color: #b8d6df;
+}
+
+p, ol, ul {
+    font-size: 16px;
+    color: #a55d5d;
+    line-height: 1.6;
+}
+
+ol, ul {
+    margin-left: 20px;
+}
+
+/* Encabezado*/
+.titulo {
+    background: #599cc2;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #90deff;
+}
+
+/*Navegación principal */
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0e0e0e;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 4px;
+    background-color: #1f657a;
+}
+
+/* Contenido principal */
+.contenido {
+    background: #edecec;
+    padding: 20px;
+    margin: 0 auto 20px auto;
+    max-width: 700px;
+    border: 1px solid #733b3b;
+    box-sizing: border-box;
+}
+
+.articulo div {
+    margin-bottom: 24px;
+}
+   /*Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 12px auto;
+    border-radius: 10px;
+}
+   /*Pie de página */
+.piedepagina {
+    background: #fff;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #8c6262;
+    font-size: 14px;
+}
+
+   /*Responsive:*/
+   @media (max-width: 600px) {
+    body {
+        padding: 6px;
+    }
+    .titulo,
+    .contenido,
+    .piedepagina {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .contenido {
+        padding: 10px 2px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    p, ol, ul {
+        font-size: 14px;
+    }
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+    .secundario {
+        font-size: 13px;
+        padding: 8px 8px;
+    }
+}
